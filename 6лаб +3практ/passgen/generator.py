@@ -1,6 +1,7 @@
 import secrets
 import string
 
+#sphinx generate html docs
 
 def generate_password(length: int, digits: bool, symbols: bool, upper: bool) -> str:
     """
@@ -14,6 +15,7 @@ def generate_password(length: int, digits: bool, symbols: bool, upper: bool) -> 
 
     :raises ValueError: если длина <= 0
     """
+
 
     if length <= 0:
         raise ValueError("Длина пароля должна быть положительной")
